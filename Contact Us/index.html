@@ -155,7 +155,7 @@
 
       <!-- Form -->
       <div class="py-6 shadow-md shadow-gray-400 rounded-md">
-        <form  class="p-4" onsubmit="sendEmail(); reset(); return false;">
+        <form  class="p-4" onsubmit="sendEmail(); reset(); return false;" action="https://formspree.io/f/mrgnopwb" method="POST">
           <div class="mb-5">
             <input
               class="outline-none border border-gray-400 px-4 py-2 rounded-md w-full"
@@ -163,6 +163,7 @@
               placeholder="Name"
               required
               id="name"
+              name="name"
             />
           </div>
           <div class="mb-5">
@@ -172,6 +173,7 @@
               placeholder="Email"
               required
               id="email"
+              name="email"
             />
           </div>
           <div class="mb-5">
@@ -181,6 +183,7 @@
               placeholder="Mobile Phone"
               required
               id="mobile"
+              name="mobile"
             />
             <p class="text-gray-500 text-md mt-1">
               Please provide WhatsApp phone number with country code (if
@@ -194,6 +197,7 @@
               placeholder="Country"
               required
               id="country"
+              name="country"
             />
           </div>
           <div class="mb-5">
@@ -204,6 +208,7 @@
               cols="30"
               rows="5"
               id="message"
+              name="message"
             >
             </textarea>
           </div>
