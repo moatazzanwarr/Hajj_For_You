@@ -1,0 +1,479 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>HAJJ For You</title>
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+  <!--  -->
+  <link href="output.css" rel="stylesheet" />
+
+  <!--  -->
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+
+</head>
+
+<body class="font-bodyFont">
+
+  <!-- header -->
+
+  <header class="bg-white py-6 fixed top-0 left-0 w-[100%] z-10">
+    <nav class="flex items-center justify-between w-[92%] mx-auto">
+      <div>
+        <a href="../index.html"
+          ><img class="w-48" src="./img/Haij our You Logo.png" alt="..."
+        /></a>
+      </div>
+      <div
+        class="nav-links duration-500 md:static absolute bg-white md:min-h-fit min-h-[60vh] left-0 top-[-450px] md:w-auto w-full flex items-center px-6"
+      >
+        <ul
+          class="flex md:flex-row flex-col md:items-center md:gap-[3vw] gap-8"
+        >
+          <li>
+            <a class="hover:text-gray-500  transition ease-out duration-200" href="../Hajj Badal/index.html"
+              >Hajj Badal</a
+            >
+          </li>
+          <li><a class="hover:text-gray-500  transition ease-out duration-200" href="../Umrah Badal/index.html">Umrah Badal</a></li>
+          <li><a class="hover:text-gray-500 transition ease-out duration-200" href="../Trusted By/index.html">Trusted By</a></li>
+          <li><a class="hover:text-gray-500 transition ease-out duration-200" href="../About Us/index.html">About Us</a></li>
+          <li><a class="hover:text-gray-500 font-semibold text-xl transition ease-out duration-200" href="../FAQS/index.html">FAQS</a></li>
+          <li><a class="hover:text-gray-500 transition ease-out duration-200" href="../Blog/index.html">Blog</a></li>
+          <li><a class="hover:text-gray-500 transition ease-out duration-200" href="../Contact Us/index.html">Contact us</a></li>
+          <li>
+            <a
+              class="hover:text-gray-500 hover:bg-opacity-90 transition ease-out duration-200 md:py-2 md:px-3 md:text-gray-900 md:bg-green-400 md:rounded-full"
+              href="#"
+              >Book Now</a
+            >
+          </li>
+        </ul>
+      </div>
+      <div class="flex items-center gap-6 md:hidden">
+        <ion-icon
+          onclick="onToggleMenu(this)"
+          name="menu-outline"
+          class="text-3xl cursor-pointer"
+        ></ion-icon>
+      </div>
+    </nav>
+  </header>
+
+
+  <!-- section 1 -->
+
+  <section class="bg-cover bg-center overflow-hidden h-96 mt-[97px] flex items-center justify-center"
+    style="background-image: url(./img/titlebg.jpg);">
+    <h1 class="text-5xl font-semibold text-gray-800">FAQS</h1>
+  </section>
+
+  <!-- section 2 -->
+
+  <section class="w-[92%] m-auto">
+    <h1 class="text-2xl md:text-5xl font-semibold text-center text-green-400 mt-14 mb-6">99% OF YOUR QUESTIONS –
+      ANSWERED</h1>
+
+    <div>
+      <div class="flex items-center flex-wrap gap-3">
+
+        <div id="general" onclick="GeneralClear()" class="flex items-center py-2 px-4 bg-green-400 cursor-pointer">
+          <i class="far fa-question-circle"></i>
+          <div class="ml-1">General Questions</div>
+        </div>
+
+        <div id="permissibility" onclick="PermissibilityClear()" class="flex items-center py-2 px-4 cursor-pointer">
+          <i class="far fa-check-circle"></i>
+          <div class="ml-1">Permissibility</div>
+        </div>
+
+        <div id="process" onclick="Process()" class="flex items-center py-2 px-4 cursor-pointer">
+          <i class="far fa-edit"></i>
+          <div class="ml-1">Process</div>
+        </div>
+
+        <div id="payment" onclick="Payment()" class="flex items-center py-2 px-4 cursor-pointer">
+          <i class="fas fa-dollar-sign"></i>
+          <div class="ml-1">Payment</div>
+        </div>
+
+        <div id="support" onclick="Support()" class="flex items-center py-2 px-4 cursor-pointer">
+          <i class="fas fa-headset"></i>
+          <div class="ml-1">Support</div>
+        </div>
+
+        <div id="miscellaneous" onclick="Miscellaneous()" class="flex items-center py-2 px-4 cursor-pointer">
+          <i class="fas fa-braille"></i>
+          <div class="ml-1">Miscellaneous</div>
+        </div>
+      </div>
+
+      <!-- Info -->
+
+      <div id="generalAll" class="info-1 w-full overflow-hidden">
+
+        <div class="General border border-gray-300">
+          <div class="info-1">
+            <h1 onclick="openGeneral_1()" class="cursor-pointer text-md font-semibold bg-gray-300 p-4 "><i
+              class="fas fa-plus mr-2"></i>WHAT IS HAJJ BADAL?</h1>
+            <div id="general_1" class=" h-0 overflow-hidden transition ease duration-300">
+              <p class="p-4">Hajj Badal is when someone gets a compulsory Hajj performed on someone’s
+                behalf by another person. Hajj Badal may be performed for another due to
+                an ongoing illness for which there is no hope of a cure, or because of old
+                age, or because the person has already passed away without completing the
+                obligatory ‘Hajj.</p>
+            </div>
+          </div>
+
+          <div class="info-2">
+            <h1 onclick="openGeneral_2()" class="cursor-pointer text-md font-semibold bg-gray-300 p-4 "><i
+                class="fas fa-plus mr-2"></i>WHAT IS UMRAH BADAL?</h1>
+            <div id="general_2" class=" h-0 overflow-hidden">
+              <p class="p-4">Umrah Badal (also known as Omra Badal, Badal Omra, etc.) is a voluntary act of ‘ibaadah
+                (worship) with immense rewards. If completed in Ramadan, reward equals that of performing Hajj with the
+                Prophet – pbuh. Umrah Badal can be completed (as often as the heart desires) on behalf of deceased or
+                terminally ill Muslims.</p>
+            </div>
+          </div>
+
+          <div class="info-3">
+            <h1 onclick="openGeneral_3()" class="cursor-pointer text-md font-semibold bg-gray-300 p-4 "><i
+                class="fas fa-plus mr-2"></i>WHO PERFORMS IT?</h1>
+            <div id="general_3" class=" h-0 overflow-hidden">
+              <p class="p-4">Qualified students of knowledge from Umm Al Qurra University, Daar Al Hadeeth in Makkah, or
+                Islamic University of Madinah will be appointed to perform the hajj badal or umrah badal on your behalf.
+              </p>
+            </div>
+          </div>
+
+          <div class="info-4">
+            <h1 onclick="openGeneral_4()" class="cursor-pointer text-md font-semibold bg-gray-300 p-4 "><i
+                class="fas fa-plus mr-2"></i>WHAT ARE THE CONDITIONS FOR ‘HAJJ BADAL TO BE ACCEPTED?</h1>
+            <div id="general_4" class="h-0 overflow-hidden">
+              <div class="p-4">
+                <h2 class="mb-4">There are conditions without which Hajj Badal might not be accepted:</h2>
+                <ul class="list-disc ml-10">
+                  <li>‘Hajj Badal cannot be performed on behalf of a person if: a) the person is alive, healthy, and has
+                    the means to perform ‘Hajj, b) if the person is alive and does not meet the requirements of ‘Hajj
+                    (i.e. does not have financial means or sanity) c) the person completed his/her obligatory ‘hajj in
+                    their lifetime</li>
+                  <li>The person appointed to perform Hajj Badal must be a sane Muslim and must have completed his/her
+                    own obligatory ‘Hajj prior.</li>
+                  <li>Both the person requesting ‘Hajj Badal and the person performing ‘Hajj Badal must have pure
+                    intentions; they must do it for Allah alone and not seek any other gains from it.</li>
+                  <li>While entering into Ihram, he should make intention on behalf of the person for whom he/she will
+                    perform Hajj Badal.</li>
+                  <li>Hajj Badal must be performed by the appointed person only if he or she has been authorized to get
+                    it done by that person. In this case he/she can send someone else in his/her place.</li>
+                  <li>The appointed person who performs Hajj Badal should perform the type of Hajj according to the
+                    desire of the person who sent them (Hajj Al-Tamattu, Hajj Al-Qiran).</li>
+                  <li>The appointed person should not miss any imperative (Fard) part of the Hajj as no type of
+                    compensation can render Hajj Badal.</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <div class="info-5">
+            <h1 onclick="openGeneral_5()" class="cursor-pointer text-md font-semibold bg-gray-300 p-4"><i
+                class="fas fa-plus mr-2"></i>WHAT ARE THE CONDITIONS FOR ‘UMRAH BADAL TO BE ACCEPTED?</h1>
+            <div id="general_5" class=" h-0 overflow-hidden">
+              <div class="p-4">
+                <h2 class="mb-4">Umrah Badal must meet the following conditions for it to be accepted:</h2>
+                <ul class="list-disc ml-10 p-4">
+                  <li>Both the person requesting ‘Hajj Badal and the person performing ‘Hajj Badal must have pure
+                    intentions; they must do it for Allah alone and not seek any other gains from it.</li>
+                  <li>While entering into Ihram, he should make intention on behalf of the person for whom he/she will
+                    perform Umrah Badal.</li>
+                  <li>Umrah Badal must be performed by the appointed person only if he or she has been authorized to
+                    get it done by that person. In this case he/she can send someone else in his/her place.</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <div class="info-6">
+            <h1 onclick="openGeneral_6()" class="cursor-pointer text-md font-semibold bg-gray-300 p-4 "><i
+                class="fas fa-plus mr-2"></i>WHAT PROOF WILL YOU PROVIDE FOR ‘HAJJ BADAL / BADAL HAJJ?</h1>
+            <div id="general_6" class="h-0 overflow-hidden">
+              <div class="p-4">
+                <p class="mb-4">We are working hard to provide small video clips of the person performing Hajj on
+                  behalf of your loved ones. We are committed to striving hard to be able to provide video as proof of
+                  completion of Hajj. We will do our best to organize this but no guarantee. Sometimes images/videos
+                  of some of the hajj are not received due to logistical challenges.</p>
+                <p>Please indicate your desire to receive such proof and we will try our best. BaarakAllahu feekum.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Permissibility -->
+      <div id="permissibilityAll" class="info-2 w-full overflow-hidden h-0">
+        <div class="General border border-gray-300">
+
+          <div class="info-1">
+            <h1 onclick="" class="cursor-pointer text-md font-semibold bg-gray-300 p-4 "><i
+                class="fas fa-plus mr-2"></i>WHAT IS HAJJ BADAL?</h1>
+            <div id="Permissibility_1" class=" h-0 overflow-hidden transition ease duration-300">
+              <p class="p-4">Hajj Badal is when someone gets a compulsory Hajj performed on someone’s
+                behalf by another person. Hajj Badal may be performed for another due to
+                an ongoing illness for which there is no hope of a cure, or because of old
+                age, or because the person has already passed away without completing the
+                obligatory ‘Hajj.
+              </p>
+            </div>
+          </div>
+
+          <div class="info-2">
+            <h1 onclick="" class="cursor-pointer text-md font-semibold bg-gray-300 p-4 "><i
+                class="fas fa-plus mr-2"></i>WHAT IS UMRAH BADAL?</h1>
+            <div id="Permissibility_2" class=" h-0 overflow-hidden">
+              <p class="p-4">Umrah Badal (also known as Omra Badal, Badal Omra, etc.) is a voluntary act of ‘ibaadah
+                (worship) with immense rewards. If completed in Ramadan, reward equals that of performing Hajj with
+                the Prophet – pbuh. Umrah Badal can be completed (as often as the heart desires) on behalf of deceased
+                or terminally ill Muslims.</p>
+            </div>
+          </div>
+
+          <div class="info-3">
+            <h1 onclick="" class="cursor-pointer text-md font-semibold bg-gray-300 p-4 "><i
+                class="fas fa-plus mr-2"></i>WHO PERFORMS IT?</h1>
+            <div id="Permissibility_3" class=" h-0 overflow-hidden">
+              <p class="p-4">Qualified students of knowledge from Umm Al Qurra University, Daar Al Hadeeth in Makkah,
+                or Islamic University of Madinah will be appointed to perform the hajj badal or umrah badal on your
+                behalf.</p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- Process -->
+      <div id="processAll" class="info-2 w-full overflow-hidden h-0">
+        <div class="General border border-gray-300">
+
+          <div class="info-1">
+            <h1 onclick="" class="cursor-pointer text-md font-semibold bg-gray-300 p-4 "><i
+                class="fas fa-plus mr-2"></i>WHAT IS HAJJ BADAL?</h1>
+            <div id="Permissibility_1" class=" h-0 overflow-hidden transition ease duration-300">
+              <p class="p-4">Hajj Badal is when someone gets a compulsory Hajj performed on someone’s
+                behalf by another person. Hajj Badal may be performed for another due to
+                an ongoing illness for which there is no hope of a cure, or because of old
+                age, or because the person has already passed away without completing the
+                obligatory ‘Hajj.
+              </p>
+            </div>
+          </div>
+
+          <div class="info-2">
+            <h1 onclick="" class="cursor-pointer text-md font-semibold bg-gray-300 p-4 "><i
+                class="fas fa-plus mr-2"></i>WHAT IS UMRAH BADAL?</h1>
+            <div id="Permissibility_2" class=" h-0 overflow-hidden">
+              <p class="p-4">Umrah Badal (also known as Omra Badal, Badal Omra, etc.) is a voluntary act of ‘ibaadah
+                (worship) with immense rewards. If completed in Ramadan, reward equals that of performing Hajj with
+                the Prophet – pbuh. Umrah Badal can be completed (as often as the heart desires) on behalf of deceased
+                or terminally ill Muslims.</p>
+            </div>
+          </div>
+
+          <div class="info-3">
+            <h1 onclick="" class="cursor-pointer text-md font-semibold bg-gray-300 p-4 "><i
+                class="fas fa-plus mr-2"></i>WHO PERFORMS IT?</h1>
+            <div id="Permissibility_3" class=" h-0 overflow-hidden">
+              <p class="p-4">Qualified students of knowledge from Umm Al Qurra University, Daar Al Hadeeth in Makkah,
+                or Islamic University of Madinah will be appointed to perform the hajj badal or umrah badal on your
+                behalf.</p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- Payment -->
+      <div id="paymentAll" class="info-2 w-full overflow-hidden h-0">
+        <div class="General border border-gray-300">
+
+          <div class="info-1">
+            <h1 onclick="" class="cursor-pointer text-md font-semibold bg-gray-300 p-4 "><i
+                class="fas fa-plus mr-2"></i>WHAT IS HAJJ BADAL?</h1>
+            <div id="Permissibility_1" class=" h-0 overflow-hidden transition ease duration-300">
+              <p class="p-4">Hajj Badal is when someone gets a compulsory Hajj performed on someone’s
+                behalf by another person. Hajj Badal may be performed for another due to
+                an ongoing illness for which there is no hope of a cure, or because of old
+                age, or because the person has already passed away without completing the
+                obligatory ‘Hajj.
+              </p>
+            </div>
+          </div>
+
+          <div class="info-2">
+            <h1 onclick="" class="cursor-pointer text-md font-semibold bg-gray-300 p-4 "><i
+                class="fas fa-plus mr-2"></i>WHAT IS UMRAH BADAL?</h1>
+            <div id="Permissibility_2" class=" h-0 overflow-hidden">
+              <p class="p-4">Umrah Badal (also known as Omra Badal, Badal Omra, etc.) is a voluntary act of ‘ibaadah
+                (worship) with immense rewards. If completed in Ramadan, reward equals that of performing Hajj with
+                the Prophet – pbuh. Umrah Badal can be completed (as often as the heart desires) on behalf of deceased
+                or terminally ill Muslims.</p>
+            </div>
+          </div>
+
+          <div class="info-3">
+            <h1 onclick="" class="cursor-pointer text-md font-semibold bg-gray-300 p-4 "><i
+                class="fas fa-plus mr-2"></i>WHO PERFORMS IT?</h1>
+            <div id="Permissibility_3" class=" h-0 overflow-hidden">
+              <p class="p-4">Qualified students of knowledge from Umm Al Qurra University, Daar Al Hadeeth in Makkah,
+                or Islamic University of Madinah will be appointed to perform the hajj badal or umrah badal on your
+                behalf.</p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- Support -->
+      <div id="supportAll" class="info-2 w-full overflow-hidden h-0">
+        <div class="General border border-gray-300">
+
+          <div class="info-1">
+            <h1 onclick="" class="cursor-pointer text-md font-semibold bg-gray-300 p-4 "><i
+                class="fas fa-plus mr-2"></i>WHAT IS HAJJ BADAL?</h1>
+            <div id="Permissibility_1" class=" h-0 overflow-hidden transition ease duration-300">
+              <p class="p-4">Hajj Badal is when someone gets a compulsory Hajj performed on someone’s
+                behalf by another person. Hajj Badal may be performed for another due to
+                an ongoing illness for which there is no hope of a cure, or because of old
+                age, or because the person has already passed away without completing the
+                obligatory ‘Hajj.
+              </p>
+            </div>
+          </div>
+
+          <div class="info-2">
+            <h1 onclick="" class="cursor-pointer text-md font-semibold bg-gray-300 p-4 "><i
+                class="fas fa-plus mr-2"></i>WHAT IS UMRAH BADAL?</h1>
+            <div id="Permissibility_2" class=" h-0 overflow-hidden">
+              <p class="p-4">Umrah Badal (also known as Omra Badal, Badal Omra, etc.) is a voluntary act of ‘ibaadah
+                (worship) with immense rewards. If completed in Ramadan, reward equals that of performing Hajj with
+                the Prophet – pbuh. Umrah Badal can be completed (as often as the heart desires) on behalf of deceased
+                or terminally ill Muslims.</p>
+            </div>
+          </div>
+
+          <div class="info-3">
+            <h1 onclick="" class="cursor-pointer text-md font-semibold bg-gray-300 p-4 "><i
+                class="fas fa-plus mr-2"></i>WHO PERFORMS IT?</h1>
+            <div id="Permissibility_3" class=" h-0 overflow-hidden">
+              <p class="p-4">Qualified students of knowledge from Umm Al Qurra University, Daar Al Hadeeth in Makkah,
+                or Islamic University of Madinah will be appointed to perform the hajj badal or umrah badal on your
+                behalf.</p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- Miscellaneous -->
+      <div id="miscellaneousAll" class="info w-full overflow-hidden h-0">
+        <div class="General border border-gray-300">
+
+          <div class="info-1">
+            <h1 onclick="" class="cursor-pointer text-md font-semibold bg-gray-300 p-4 "><i
+                class="fas fa-plus mr-2"></i>WHAT IS HAJJ BADAL?</h1>
+            <div id="Permissibility_1" class=" h-0 overflow-hidden transition ease duration-300">
+              <p class="p-4">Hajj Badal is when someone gets a compulsory Hajj performed on someone’s
+                behalf by another person. Hajj Badal may be performed for another due to
+                an ongoing illness for which there is no hope of a cure, or because of old
+                age, or because the person has already passed away without completing the
+                obligatory ‘Hajj.
+              </p>
+            </div>
+          </div>
+
+          <div class="info-2">
+            <h1 onclick="" class="cursor-pointer text-md font-semibold bg-gray-300 p-4 "><i
+                class="fas fa-plus mr-2"></i>WHAT IS UMRAH BADAL?</h1>
+            <div id="Permissibility_2" class=" h-0 overflow-hidden">
+              <p class="p-4">Umrah Badal (also known as Omra Badal, Badal Omra, etc.) is a voluntary act of ‘ibaadah
+                (worship) with immense rewards. If completed in Ramadan, reward equals that of performing Hajj with
+                the Prophet – pbuh. Umrah Badal can be completed (as often as the heart desires) on behalf of deceased
+                or terminally ill Muslims.</p>
+            </div>
+          </div>
+
+          <div class="info-3">
+            <h1 onclick="" class="cursor-pointer text-md font-semibold bg-gray-300 p-4 "><i
+                class="fas fa-plus mr-2"></i>WHO PERFORMS IT?</h1>
+            <div id="Permissibility_3" class=" h-0 overflow-hidden">
+              <p class="p-4">Qualified students of knowledge from Umm Al Qurra University, Daar Al Hadeeth in Makkah,
+                or Islamic University of Madinah will be appointed to perform the hajj badal or umrah badal on your
+                behalf.</p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+
+
+  <!-- footer -->
+
+  <footer class="text-center">
+    <h1 class="text-4xl text-orange-600 font-semibold my-6">READY TO GIVE</h1>
+    <h1 class="text-4xl text-orange-600 font-semibold mb-10">THE GREATEST GIFTS?</h1>
+
+    <div class="py-12 px-10 bg-green-400">
+      <span class="sm:text-center md:text-end block sm:text-md md:text-lg font-semibold">Copyright © 2024 –
+        Hajjforyou.com, All rights reserved</span>
+    </div>
+
+  </footer>
+
+
+  <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+  <script>
+    const navLinks = document.querySelector(".nav-links");
+    function onToggleMenu(e) {
+      e.name = e.name === "menu-outline" ? "close-outline" : "menu-outline";
+      navLinks.classList.toggle("top-[110px]");
+    }
+
+    ////
+
+  </script>
+
+  <!-- swiper -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+  <script>
+    const swiper = new Swiper('.swiper', {
+      loop: true,
+
+
+      pagination: {
+        el: '.swiper-pagination',
+      },
+
+
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+    });
+  </script>
+
+  <script src="./main.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,566 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HAJJ For You</title>
+
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+    <!--  -->
+    <link href="output.css" rel="stylesheet" />
+
+    <!--  -->
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+
+
+  </head>
+
+  <body class="font-bodyFont">
+
+    <!-- header -->
+
+    <header class="bg-white py-6 fixed top-0 left-0 w-[100%] z-10">
+      <nav class="flex items-center justify-between w-[92%] mx-auto">
+        <div>
+          <a href="./index.html"
+            ><img class="w-48" src="./img/Haij our You Logo.png" alt="..."
+          /></a>
+        </div>
+        <div
+          class="nav-links duration-500 md:static absolute bg-white md:min-h-fit min-h-[60vh] left-0 top-[-450px] md:w-auto w-full flex items-center px-6"
+        >
+          <ul
+            class="flex md:flex-row flex-col md:items-center md:gap-[3vw] gap-8"
+          >
+            <li>
+              <a class="hover:text-gray-500 transition ease-out duration-200" href="./Hajj Badal/index.html"
+                >Hajj Badal</a
+              >
+            </li>
+            <li><a class="hover:text-gray-500 transition ease-out duration-200" href="./Umrah Badal/index.html">Umrah Badal</a></li>
+            <li><a class="hover:text-gray-500 transition ease-out duration-200" href="./Trusted By/index.html">Trusted By</a></li>
+            <li><a class="hover:text-gray-500 transition ease-out duration-200" href="./About Us/index.html">About Us</a></li>
+            <li><a class="hover:text-gray-500 transition ease-out duration-200" href="./FAQS/index.html">FAQS</a></li>
+            <li><a class="hover:text-gray-500 transition ease-out duration-200" href="./Blog/index.html">Blog</a></li>
+            <li><a class="hover:text-gray-500 transition ease-out duration-200" href="./Contact Us/index.html">Contact us</a></li>
+            <li>
+              <a
+                class="hover:text-gray-500 hover:bg-opacity-90 transition ease-out duration-200 md:py-2 md:px-3 md:text-gray-900 md:bg-green-400 md:rounded-full"
+                href="#"
+                >Book Now</a
+              >
+            </li>
+          </ul>
+        </div>
+        <div class="flex items-center gap-6 md:hidden">
+          <ion-icon
+            onclick="onToggleMenu(this)"
+            name="menu-outline"
+            class="text-3xl cursor-pointer"
+          ></ion-icon>
+        </div>
+      </nav>
+    </header>
+
+    <!-- section 1 -->
+
+    <section
+      class="w-[92%] h-auto md:h-[calc(100vh-110px)] mt-[110px] m-auto flex justify-between items-center gap-10 relative overflow-hidden"
+    >
+      <div
+        class="pl-6 md:pl-0 w-full h-full md:w-[48%] flex items-center justify-center absolute md:relative bg-black bg-opacity-45 md:bg-opacity-0"
+      >
+        <div class="w-full">
+          <h1
+            class="text-nowrap md:text-wrap text-3xl text-orange-600 md:text-4xl font-bold"
+          >
+            2024 HAJJ For You: Open
+          </h1>
+          <p
+            class="text-xl text-gray-50 md:text-black text-nowrap md:text-wrap pt-10 w-[80%]"
+          >
+            Please Register For Hajj 2024.
+            <span class="hidden md:inline"
+              >3 Options To Choose From. Limited Spots.</span
+            >
+          </p>
+          <div class="pt-6">
+            <a
+              href="#"
+              class="hover:text-gray-500 hover:bg-opacity-90 transition ease-out duration-200 py-2 px-3 md:text-gray-900 bg-green-400 rounded-full"
+              >Book Now</a
+            >
+          </div>
+        </div>
+      </div>
+      <div class="h-auto w-[100%] md:w-[48%] overflow-hidden ">
+        <img src="./img/1.jpeg" alt="" class="h-full w-auto object-cover" />
+      </div>
+    </section>
+
+    <!-- section 2 -->
+
+    <section class="w-[92%] m-auto">
+      <div class="grid md:grid-cols-2 gap-10 py-10">
+        <div class=" overflow-hidden mb-6 md:mb-0">
+          <h1 class="text-xl font-semibold my-5">
+            Hajj is the greatest gift for 3 simple reasons:
+          </h1>
+          <div class="mb-[1px]">
+            <h3
+              class="bg-gray-300 p-4 flex items-center gap-1 text-green-400 font-bold cursor-pointer"
+            >
+              <ion-icon name="add-outline" class="text-2xl font-bold"></ion-icon
+              >It repays a debt owed to Allah.
+            </h3>
+            <p class="hidden">
+              A woman from Juhaynah came to the Prophet (peace be upon him) and
+              said:“My mother vowed to go for Hajj, but she did not go for Hajj
+              before she died. Should I do Hajj on her behalf?” He said:…Pay off
+              the debt that is owed to Allah…” (Al-Bukhari, 1754)
+            </p>
+          </div>
+          <div class="mb-[1px]">
+            <h3
+              class="bg-gray-300 p-4 flex items-center gap-1 text-green-400 font-bold cursor-pointer"
+            >
+              <ion-icon name="add-outline" class="text-2xl font-bold"></ion-icon
+              >Reward of ‘Hajj is complete forgiveness and paradise.
+            </h3>
+            <p class="hidden">
+              The Prophet (peace be upon him) said: “Whoever performs Hajj to
+              this house – Ka’bah- and does not commit any obscenity and
+              wrongdoing, he/she, will come out as the day he/she was born –
+              pure and free from sins.” [Al Bukhari and Muslim]
+            </p>
+          </div>
+          <div class="mb-[1px]">
+            <h3
+              class="bg-gray-300 p-4 flex items-center gap-1 text-green-400 font-bold cursor-pointer"
+            >
+              <ion-icon name="add-outline" class="text-2xl font-bold"></ion-icon
+              >Hajj is something most Muslims look forward to throughout their
+              lives.
+            </h3>
+            <p class="hidden">
+              How painful is it for a person to not have that dream fulfilled?
+              Imagine paying off a debt like ‘hajj and giving that reward to a
+              person in the grave or to a person who is unable to perform ‘hajj!
+              How awesome is that?
+            </p>
+          </div>
+        </div>
+
+        <div class="">
+          <video src="./img/video-1.mp4" controls muted class="rounded-lg"></video>
+        </div>
+      </div>
+
+      <div class="mb-10">
+        <p class="md:w-[70%] text-center m-auto">
+          We pray that
+          <span class="font-bold">Allah grants you the reward of ‘hajj</span>
+          for showing such generosity towards your loved one(s). Watch the video
+          of Ustadh Nouman explaining why ‘Hajj is the most unique act of
+          worship (‘ibaadah) and is the legacy of our father Ibrahim (AS).
+        </p>
+      </div>
+    </section>
+
+    <!-- section 3 -->
+
+    <section class="w-[92%] m-auto py-10">
+      <div class="flex items-center justify-center mb-4">
+        <div class="py-2 px-3 bg-green-400 text-xl font-bold cursor-pointer">
+          HAJJ BADAL
+        </div>
+        <div class="py-2 px-3 text-xl font-bold cursor-pointer">
+          UMRAH BADAL
+        </div>
+      </div>
+
+      <div
+        class="md:w-[92%] flex items-center justify-center gap-10 flex-col-reverse md:flex-row bg-gray-300"
+      >
+        <div class="md:w-[48%] p-6">
+          <h2 class="text-2xl font-bold mb-6">GREATEST GIFT: HAJJ FOR YOU</h2>
+          <p class="font-semibold mb-6">
+            The fifth pillar of Islam – Hajj, one of the most rewarding acts in
+            Islam, completed annually on behalf of deceased / terminally ill
+            Muslims who did not have the chance to perform it themselves. Each
+            Hajj Badal (حج بدل) is performed by qualified students of knowledge,
+            who meet all the conditions and are supervised by a reputable Imam.
+          </p>
+          <div class="text-center">
+            <a
+              href="#"
+              class="font-bold hover:bg-opacity-90 transition ease-out duration-200 hover:text-gray-500 py-3 px-6 bg-green-400 rounded-md"
+              >GIVE THE GIFT OF HAJJ</a
+            >
+          </div>
+        </div>
+        <div class="md:w-[48%]">
+          <img
+            src="./img/hajj2.jpg.webp"
+            alt=""
+            class="w-full h-full object-cover"
+          />
+        </div>
+      </div>
+    </section>
+
+    <!-- section 4 -->
+
+    <section class="w-[92%] m-auto flex justify-center items-center py-32">
+      <div class="cards grid md:grid-cols-2 lg:grid-cols-4 gap-5">
+
+        <div
+          class="card h-auto mb-4  p-6 text-center rounded-2xl shadow-md shadow-gray-400"
+        >
+          <div
+            class="icon bg-green-400 hover:bg-orange-500 transition ease-out duration-200 hover:text-gray-900 w-[100px] h-[100px] m-auto rounded-full flex items-center justify-center"
+          >
+            <i class="fa-regular fa-hand-pointer text-5xl"></i>
+          </div>
+          <div class="text">
+            <h3 class="font-bold text-xl my-4">1. CHOOSE GIFT</h3>
+            <p>
+              Choose one of two ultimate gifts: Hajj Badal (حج البدل) or Umrah
+              Badal to be performed by qualified students of knowledge in
+              Makkah.
+            </p>
+          </div>
+        </div>
+
+        <div
+          class="card h-auto mb-4 p-6 text-center rounded-2xl shadow-md shadow-gray-400"
+        >
+          <div
+            class="icon bg-green-400 hover:bg-orange-500 transition ease-out duration-200 hover:text-gray-900 w-[100px] h-[100px] m-auto rounded-full flex items-center justify-center"
+          >
+          <i aria-hidden="true" class="fas fa-dollar-sign text-5xl"></i>
+          </div>
+          <div class="text">
+            <h3 class="font-bold text-xl my-4">2. MAKE PAYMENT</h3>
+            <p>
+              Make payment online. Receive confirmation. See FAQ for alternative
+              payment options: bank transfer, Direct deposit, certified cheque
+              etc.
+            </p>
+          </div>
+        </div>
+
+        <div
+          class="card h-auto mb-4 p-6 text-center rounded-2xl shadow-md shadow-gray-400"
+        >
+          <div
+            class="icon bg-green-400 hover:bg-orange-500 transition ease-out duration-200 hover:text-gray-900 w-[100px] h-[100px] m-auto rounded-full flex items-center justify-center"
+          >
+          <i aria-hidden="true" class="far fa-handshake text-5xl"></i>
+          </div>
+          <div class="text">
+            <h3 class="font-bold text-xl my-4">3. WE ARRANGE</h3>
+            <p>
+              Hajj Badal or Umrah Badal is performed on behalf of your loved
+              one(s); the process is overseen by a registered Imam in Makkah.
+            </p>
+          </div>
+        </div>
+
+        <div
+          class="card h-auto mb-4 p-6 text-center rounded-2xl shadow-md shadow-gray-400"
+        >
+          <div
+            class="icon bg-green-400 hover:bg-orange-500 transition ease-out duration-200 hover:text-gray-900 w-[100px] h-[100px] m-auto rounded-full flex items-center justify-center"
+          >
+          <i aria-hidden="true" class="fas fa-scroll text-5xl"></i>
+          </div>
+          <div class="text">
+            <h3 class="font-bold text-xl my-4">4. CERTIFICATION</h3>
+            <p>
+              Receive a certification of completion consisting of the student’s
+              name and Imam’s stamp after the Hajj Badal is performed.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- section 5 -->
+
+    <section class="w-[92%] m-auto">
+        <h1 class="text-3xl text-green-400 text-center font-bold py-6">OUR PURPOSE</h1>
+
+        <div class="md:flex justify-between gap-4">
+            <div class="md:w-[48%]">
+                <img src="./img/3.webp" alt="">
+            </div>
+            <div class="md:w-[48%] mt-4 md:mt-0">
+                <h3 class="font-semibold mb-4">HajjBadal.net is an innovative service set up to achieve 2 simple yet noble goals:</h3>
+
+                <ol class="pl-10 list-decimal">
+                    <li>To facilitate the 5th pillar of Islam for those who didn’t get the chance to do Hajj/umrah. Hajj by Us makes it easy for family members with the opportunity to give the ultimate gift to their deceased or permanently ill relatives.</li>
+                    <li>To financially assist students and graduates of Islamic Universities (in Saudi Arabia) with extra money to support their studies & livelihood (buy books, travel for knowledge etc.). All requests of Hajj Badal (بدل حج) & Umrah Badals (بدل عمرة) are performed by qualified students of knowledge.</li>
+                </ol>
+
+                <p class="mt-3">The Prophet (peace be upon said): “The one who shows/calls another to a good deed, is given the same reward as the one who performs it”.
+                    So, it’s a win win situation for everyone and we pray that Allah grants us the reward of all ‘hajj and ‘umrahs completed through this facilitation.
+                </p>
+
+                <p class="font-semibold">* HajjBadal.net  is operated by HajjByUs Inc – a registered organization in Canada.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- section 6 -->
+
+    <section class="w-[92%] m-auto py-12">
+        <div>
+            <h1 class="font-bold text-4xl">MADE FOR OUR FAMILIES AND YOURS!</h1>
+            <p class="md:w-[60%]">The Hajj By Us team, its families and friends regularly utilize the service. So, it’s personal! We will treat you just like we like to be treated. 
+                <span class="font-bold text-green-400">Give the gift of ‘Hajj or ‘Umrah!</span>
+            </p>
+        </div>
+    </section>
+
+
+    <!-- section 7 -->
+
+    <section class="w-[92%] m-auto h-auto">
+        <div>
+            <h1 class="text-4xl text-green-400 text-center font-bold py-5">TRUST THEIR WORDS FOR IT</h1>
+            <p class="md:w-[82%] mb-4">The following world renowned Imams and callers of Islam are putting their names behind us. We are extremely  grateful for their trust, kindness, and love. May Allah protect them and grant them and their families the best of this world and the next.</p>
+        </div>
+
+        <div class="grid sm:grid-cols-1 md:grid-cols-3 lg:grid-cols-5 gap-4 text-center py-6">
+
+          <div class="sh">
+            <div class="flex justify-center">
+              <img class="rounded-full" src="./img/Sh.-Bilal-Ismail-2-500x500-1.jpg.webp" alt="sh.Bilal">
+            </div>
+            <h3 class="font-semibold md:text-lg my-2">SH. BILAL ISMAIL</h3>
+            <h4 class="text-orange-600">SOUTH AFRICA</h4>
+          </div>
+
+          <div class="sh">
+            <div class="flex justify-center">
+              <img class="rounded-full" src="./img/Sh.-Alaa-ElSayed-1-500x500-1.jpg.webp" alt="sh.Bilal">
+            </div>
+            <h3 class="font-semibold md:text-lg my-2">SH. ALAA EL SAYED</h3>
+            <h4 class="text-orange-600">CANADA</h4>
+          </div>
+
+          <div class="sh">
+            <div class="flex justify-center">
+              <img class="rounded-full" src="./img/yahya-ibrahim-500x500-1.jpg.webp" alt="sh.Bilal">
+            </div>
+            <h3 class="font-semibold md:text-lg my-2">SH. YAHYA IBRAHIM</h3>
+            <h4 class="text-orange-600">AUSTRALIA</h4>
+          </div>
+
+          <div class="sh">
+            <div class="flex justify-center">
+              <img class="rounded-full" src="./img/Sh.-Navaid-Aziz-2-500x500-1.jpg.webp" alt="sh.Bilal">
+            </div>
+            <h3 class="font-semibold md:text-lg my-2">SH. NAVAID AZIZ</h3>
+            <h4 class="text-orange-600">CANADA</h4>
+          </div>
+
+          <div class="sh">
+            <div class="flex justify-center">
+              <img class="rounded-full" src="./img/Sh.-Abdul-Nasir-Jangda-1-500x500-1.jpg.webp" alt="sh.Bilal">
+            </div>
+            <h3 class="font-semibold md:text-lg my-2">SH. ABDUL NASIR</h3>
+            <h4 class="text-orange-600">USA</h4>
+          </div>
+
+        </div>
+
+    </section>
+
+    <!-- section 8 -->
+
+    <section class="m-auto h-auto flex justify-center">
+      <video src="./img/video-1.mp4" controls muted class="rounded-lg"></video>
+    </section>
+
+        <!-- section 9 -->
+
+    <section>
+                            <!-- Slider main container -->
+                            <div class="swiper my-10 bg-orange-600">
+                              <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                  <!-- <img src="./img/Sh.-Alaa-ElSayed-1-500x500-1.jpg.webp" alt="" class="object-cover w-full"> -->
+                                  <div class="h-auto m-auto py-3 px-3 text-white flex items-center justify-center">
+                                    <p class="h-full w-full text-lg px-10 py-10">
+                                      All I can say is that I am very satisfied with your service.
+                                      The entire process is based on trust and faith and I have no
+                                       doubt in my mind of the outcome provided by HajjByUs.
+                                        Thank you and may Allah (SWT) bless you. Ameen.
+                                    </p>
+                                  </div>
+                                </div>
+                                <div class="swiper-slide">
+                                  <div class="h-auto m-auto py-3 px-3  text-white flex items-center justify-center">
+                                    <p class="h-full w-full text-lg px-10 py-10">
+                                      sed hajjbyus to perform hajj badal for my late father and I am really glad that I could find someone trustworthy. I have no regrets and most importantly I am completely satisfied. Thank you for sending the certificate.
+                                      Sirrah K
+                                      London, UK
+                                    </p>
+                                  </div>
+                                </div>
+                                <div class="swiper-slide">
+                                  <div class="h-auto m-auto py-3 px-3  text-white flex items-center justify-center">
+                                    <p class="h-full w-full text-lg px-10 py-10">
+                                      I used hajjbyus to perform hajj badal for my late father and I am really glad that I could find someone trustworthy. I have no regrets and most importantly I am completely satisfied. Thank you for sending the certificate.
+                                      Sirrah K
+                                      London, UK
+                                      All I can say is that I am very satisfied with your service.
+                                    </p>
+                                  </div>
+                                </div>
+                              </div>
+                              <!-- <div class="swiper-pagination"></div> -->
+                              <div class="swiper-button-prev after:text-white"></div>
+                              <div class="swiper-button-next after:text-white"></div>
+                              <div class="swiper-scrollbar after:text-white"></div>
+                            </div>
+    </section>
+
+    <!-- section 10 -->
+
+    <section>
+      <div class="py-12">
+        <h1 class="text-xl md:text-2xl lg:text-3xl font-bold w-[92%] md:w-[70%] m-auto">Ready to Give the gift of ‘Hajj or ‘Umrah?</h1>
+        <h1 class="text-xl md:text-2xl lg:text-3xl font-bold w-[92%] md:w-[70%] m-auto my-12 text-gray-500">ARTICLES FROM OUR BLOG</h1>
+      </div>
+    </section>
+
+    <!-- section 11 -->
+
+    <section class="w-[92%] m-auto my-5">
+      <h1 class="mb-5 text-3xl text-green-400 font-bold text-center">FREQUENTLY ASKED QUESTIONS</h1>
+
+      <div>
+        <div class="mb-[1px]">
+          <h3
+            class="bg-gray-300 p-4 flex items-center gap-1 text-green-400 font-bold cursor-pointer"
+          >
+            <ion-icon name="add-outline" class="text-2xl font-bold"></ion-icon
+            >WHO PERFORMS HAJJ BADAL & UMRAH BADAL?
+          </h3>
+          <p class="hidden">
+            Qualified students of knowledge from Madinah University, Umm Al Qurra University in Makkah, or Daar Al Hadeeth in Makkah will be appointed to perform the hajj badal or umrah badal on your behalf.
+          </p>
+        </div>
+
+        <div class="mb-[1px]">
+          <h3
+            class="bg-gray-300 p-4 flex items-center gap-1 text-green-400 font-bold cursor-pointer"
+          >
+            <ion-icon name="add-outline" class="text-2xl font-bold"></ion-icon
+            >IS UD’HIYA / SACRIFICE / QURBANI INCLUDED FOR HAJJ BADAL?
+          </h3>
+          <p class="hidden">
+            Due to recent price increase for Udhiya in Saudi Arabia, we are now making it an optional payment as it’s not required as part of Hajj Ifraad on behalf of a deceased.
+          </p>
+        </div>
+
+        <div class="mb-[1px]">
+          <h3
+            class="bg-gray-300 p-4 flex items-center gap-1 text-green-400 font-bold cursor-pointer"
+          >
+            <ion-icon name="add-outline" class="text-2xl font-bold"></ion-icon
+            >I’M NOT FROM CANADA, CAN I STILL REGISTER?
+          </h3>
+          <p class="hidden">
+            Absolutely! Every Muslim is welcome; despite their age, gender, language, or country! To date we fulfilled requests from USA, Canada, Australia, UK, France, UAE, Malaysia, New Zealand, Saudi Arabia, UAE, India, Bangladesh, and Pakistan. We are here to help you give the ultimate gift to your loved ones – regardless of where you are from?
+          </p>
+        </div>
+
+        <div class="mb-[1px]">
+          <h3
+            class="bg-gray-300 p-4 flex items-center gap-1 text-green-400 font-bold cursor-pointer"
+          >
+            <ion-icon name="add-outline" class="text-2xl font-bold"></ion-icon>
+            CAN I MAKE PAYMENTS VIA ALTERNATE METHODS? I DON’T HAVE A CREDIT CARD.
+          </h3>
+          <p class="hidden">
+            Yes, absolutely. If you are from outside Canada, you can send us the payment through Bank Transfer / Western Union / other means. If you are in Canada, you make direct deposit to our bank account or send us a certified cheque. For more details see FAQ and Contact Us.
+          </p>
+        </div>
+        <div class="mb-[1px]">
+          <h3
+            class="bg-gray-300 p-4 flex items-center gap-1 text-green-400 font-bold cursor-pointer"
+          >
+            <ion-icon name="add-outline" class="text-2xl font-bold"></ion-icon>
+            CAN I SEND GIFTS / PAY EXTRA FOR THE PERSON PERFORMING ‘HAJJ / ‘UMRAH?
+          </h3>
+          <p class="hidden">
+            Yes, absolutely. However, we are only able to process monetary gifts at the moment due to logistical reasons. Please contact us should you wish to send special gifts to the person performing ‘Hajj / ‘Umrah for your loved ones.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- footer -->
+
+    <footer class="text-center">
+      <h1 class="text-4xl text-orange-600 font-semibold my-6">READY TO GIVE</h1>
+      <h1 class="text-4xl text-orange-600 font-semibold mb-10">THE GREATEST GIFTS?</h1>
+
+      <div class="py-12 px-10 bg-green-400">
+        <span class="sm:text-center md:text-end block sm:text-md md:text-lg font-semibold">Copyright © 2024 – Hajjforyou.com, All rights reserved</span>
+      </div>
+
+    </footer>
+
+
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+    <script>
+      const navLinks = document.querySelector(".nav-links");
+      function onToggleMenu(e) {
+        e.name = e.name === "menu-outline" ? "close-outline" : "menu-outline";
+        navLinks.classList.toggle("top-[110px]");
+      }
+
+      ////
+
+    </script>
+
+    <!-- swiper -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <script>
+      const swiper = new Swiper('.swiper', {
+        loop: true,
+
+
+        pagination: {
+          el: '.swiper-pagination',
+        },
+
+
+        navigation: {
+          nextEl: '.swiper-button-next',
+          prevEl: '.swiper-button-prev',
+        },
+      });
+    </script>
+
+  </body>
+</html>
